@@ -1,0 +1,45 @@
+ÿ
+#
+# AI Validation (Observer based) 6.1
+#
+Compiled with MDK-ARM Keil (Arm Compiler 6) 6180002
+STM32 Runtime configuration...
+ Device       : DevID:0x0450 (STM32H743/53/50xx and STM32H745/55/47/57xx) RevID:0x1003
+ Core Arch.   : M7 - FPU  used
+ HAL version  : 0x010b0000
+ SYSCLK clock : 400 MHz
+ HCLK clock   : 200 MHz
+ FLASH conf.  : ACR=0x00000032 - latency=2
+ CACHE conf.  : $I/$D=(True,True)
+ Timestamp    : SysTick + DWT (HAL_Delay(1)=1.002 ms)
+
+AI platform (API 1.1.0 - RUNTIME 7.2.0)
+Discovering the network(s)...
+
+Found network "network"
+Creating the network "network"..
+Initializing the network
+Network informations...
+ model name         : network
+ model signature    : 2dc790fcbf897845a833751b54b09a41
+ model datetime     : Tue Oct  4 20:46:53 2022
+ compile datetime   : Oct  4 2022 20:53:37
+ runtime version    : 7.2.0
+ tools version      : 7.2.0
+ complexity         : 24120 MACC
+ c-nodes            : 6
+ map_activations    : 1
+  [0] (1,1,1,1708)1708/u8 Q8.0 @0x24000E80/1708
+ map_weights        : 1
+  [0] (1,1,1,48300)48300/u8 Q8.0 @0x800BB00/48300
+ n_inputs/n_outputs : 1/1
+  I[0] (1,26,1,3)78/float32 @0x240013F4/312
+  O[0] (1,1,1,3)3/float32 @0x24000E80/12
+
+-------------------------------------------
+| READY to receive a CMD from the HOST... |
+-------------------------------------------
+
+# Note: At this point, default ASCII-base terminal should be closed
+# and a stm32com-base interface should be used
+# (i.e. Python ai_runner module). Protocol version = 2.3
